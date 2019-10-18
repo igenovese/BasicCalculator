@@ -1,18 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <EditText
+        android:id="@+id/editText_op1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/op1_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/editText_op2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/op2_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView_ResultLabel"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:text="@string/result_label_text"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textStyle="bold"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/holo_green_dark"
+        tools:text="Calculated Value"/>
+
+    <Button
+        android:id="@+id/button_op_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/op_plus_text"/>
+
+    <Button
+        android:id="@+id/button_op_minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/op_minus_text"/>
+
+    <Button
+        android:id="@+id/button_op_mult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/op_mult_text"/>
+
+    <Button
+        android:id="@+id/button_op_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/op_div_text"/>
+
+    <Button
+        android:id="@+id/button_op_pct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/op_pct_text"/>
+
+    <Button
+        android:id="@+id/button_op_sqrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/op_sqrt_text"/>
+
+</LinearLayout>
