@@ -11,7 +11,7 @@
     <EditText
         android:id="@+id/editText_op1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
         android:hint="@string/op1_hint"
@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/editText_op2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
         android:hint="@string/op2_hint"

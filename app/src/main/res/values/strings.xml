@@ -8,5 +8,5 @@
     <string name="op_mult_text">*</string>
     <string name="op_div_text">/</string>
     <string name="op_pct_text">%</string>
-    <string name="op_sqrt_text">-</string>
+    <string name="op_sqrt_text">√</string>
 </resources>
