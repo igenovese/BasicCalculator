@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     double result = Double.valueOf( mOp1.getText().toString()) / Double.valueOf( mOp2.getText().toString() );
-                    mResult.setText( String.format("%.03f", result));
+                    mResult.setText( String.format("%.05f", result));
                 }
 
             }
