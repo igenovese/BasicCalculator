@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     double result = Double.valueOf( mOp1.getText().toString()) + Double.valueOf( mOp2.getText().toString() );
-                    mResult.setText( String.format("%.03f", result));
+                    mResult.setText( String.format("%.05f", result));
                 }
 
             }
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     double result = Double.valueOf( mOp1.getText().toString()) - Double.valueOf( mOp2.getText().toString() );
-                    mResult.setText( String.format("%.03f", result));
+                    mResult.setText( String.format("%.05f", result));
                 }
 
             }
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     double result = Double.valueOf( mOp1.getText().toString()) * Double.valueOf( mOp2.getText().toString() );
-                    mResult.setText( String.format("%.03f", result));
+                    mResult.setText( String.format("%.05f", result));
                 }
 
             }
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     double result = Double.valueOf( mOp1.getText().toString()) /100.0 ;
-                    mResult.setText( String.format("%.03f", result));
+                    mResult.setText( String.format("%.05f", result));
                 }
 
             }
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     double result = Math.sqrt( Double.valueOf( mOp1.getText().toString())   );
-                    mResult.setText( String.format("%.03f", result));
+                    mResult.setText( String.format("%.05f", result));
                 }
 
             }
@@ -155,7 +155,8 @@ public class MainActivity extends AppCompatActivity {
      * desired calculation
      *
      * @param NeedOp1		true if the calculation needs a valid operand 1
-     * @param NeedOp2		true if the calculation needss a valid operand 2
+     * @param NeedOp2		true if the calculation needs a valid operand 2
+     * @param NeedOp2Not0   true if the calculation needs operand 2 != 0
      *
      * @return			    true if the required inputs are valid, false otherwise
     **/
